@@ -1,0 +1,19 @@
+
+// ±¾µêËÑ£¬±¾Õ¾ËÑ
+this.keyword = $("#keywords");
+this.searchShop = $("#searchShop");
+this.searchName = $("#searchName");
+this.searchShop.listen('click',this.handleSearch,this);
+this.searchName.listen('click',this.handleSearch,this);
+
+tts.shop.DetailPageInit.prototype.search = function(){
+    alert(1)
+    var keyword = this.keyword;
+    var value = keyword.val();
+    value = encodeURI(value);
+    window.open('http://piao.qunar.com/ticket/list.htm?keyword='+ value + '&from=','_blank')
+};
+
+
+
+images: "[http://img1.qunarzz.com/sight/p0/201403/13/b21bdd35e7dc8e4d3fa3f3199eac4c3f.jpg_r_1190x550_4462092b.jpg, http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_r_1190x550_e5d48e07.jpg, http://img1.qunarzz.com/wugc/p123/201211/19/a2045d091f02b25493835fbb.png_r_1190x550_c8109842.png, http://img1.qunarzz.com/wugc/p206/201205/25/ca3adcd8f5f4989c93835fbb.jpg_r_1190x550_fe6a20c5.jpg, http://img1.qunarzz.com/wugc/p231/201211/19/41c8de2f612bf8e793835fbb.png_r_1190x550_fcf23a2a.png, http://img1.qunarzz.com/sight/p0/201403/13/2759628d934d51955413adfc7201aaad.jpg_r_1190x550_cd40ba10.jpg, http://img1.qunarzz.com/sight/p55/201211/04/fbcab3e5d6479ce893835fbb.jpg_r_1190x550_c64ec205.jpg, http://img1.qunarzz.com/sight/p0/201401/23/81e5149451a09cf552f33cc833e1d0af.jpg_r_1190x550_cd1063ec.jpg, http://img1.qunarzz.com/wugc/p238/201306/16/d9090c728fed64eb93835fbb.jpg_r_1190x550_f1641f17.jpg]"
